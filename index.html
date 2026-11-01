@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu reštaurácií</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="vendor/tailwind.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="vendor/jquery.min.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/parsers.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <a class="site-name" href="index.html">Obedové menu</a>
+      <button class="nav-toggle" title="Menu">☰</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Menu</a></li>
+          <li><a href="o-projekte.html">O projekte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Menu reštaurácií</h1>
+
+    <div class="grid items-start gap-6 desktop:grid-cols-[minmax(0,1fr)_320px]">
+      <div class="schedule"></div>
+
+      <aside class="sidebar row-start-1 desktop:row-auto">
+        <h2>Nastavenia a filtre</h2>
+
+        <h3>Zobraziť deň</h3>
+        <nav class="day-tabs mb-7 grid grid-cols-2 gap-2 tablet:grid-cols-4 desktop:grid-cols-2"></nav>
+
+        <fieldset class="restaurant-filters">
+          <legend>Zobraziť reštaurácie</legend>
+        </fieldset>
+
+        <p class="actions mb-0 mt-7 grid gap-3">
+          <button class="refresh-button">Aktualizovať menu</button>
+          <button class="clear-button">Vymazať uložené dáta</button>
+        </p>
+        <p class="status-message">Menu sa načítava…</p>
+      </aside>
+    </div>
+    <footer class="library-credits mt-6">
+      Použité knižnice:
+        <a href="https://tailwindcss.com/">Tailwind CSS 3.4.17</a> (CSS) a
+        <a href="https://jquery.com/">jQuery 4.0.0</a> (JavaScript).
+    </footer>
+  </main>
+</body>
+</html>

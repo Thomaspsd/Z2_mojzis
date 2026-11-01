@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O projekte | Menu reštaurácií</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="vendor/tailwind.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="vendor/jquery.min.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <a class="site-name" href="index.html">Obedové menu</a>
+      <button class="nav-toggle" title="Menu">☰</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="o-projekte.html" class="active">O projekte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>O projekte</h1>
+
+    <section class="about-project">
+      <p>Meno: Tomáš Mojžiš<br>
+        Email: xmojzist@stuba.sk</p>
+
+      <p>Stránka zobrazuje obedové menu troch reštaurácií.</p>
+
+      <h2>Zdroje menu</h2>
+      <p>Na zobrazenie používame lokálne kópie HTML stránok uložené v priečinku
+        <code>source</code>. Pôvodné zdroje sú:</p>
+      <ul>
+        <li><a href="http://www.freefood.sk/menu/#fiit-food">FiitFood</a></li>
+        <li><a href="https://eatandmeet.sk/tyzdenne-menu">Eat &amp; Meet</a></li>
+        <li><a href="https://obedvmeste.sk/berg_restaurant_bratislava">Berg Restaurant</a></li>
+      </ul>
+      <h2>Spracovanie a ukladanie údajov</h2>
+      <p>HTML načítavame asynchrónne cez Fetch API. Pomocou DOMParser vytvoríme
+        dokument a cez DOM selektory vyberieme dni, názvy jedál, typy položiek,
+        ceny a dostupné alergény či množstvá. Každá reštaurácia má vlastnú
+        funkciu na spracovanie odlišnej štruktúry stránky. Parsery sú oddelené
+        v súbore parsers.js.</p>
+      <h2>Použité knižnice a font</h2>
+      <ul>
+        <li><a href="https://tailwindcss.com/">Tailwind CSS 3.4.17</a></li>
+        <li><a href="https://jquery.com/">jQuery 4.0.0</a></li>
+        <li>Font Inter – s licenciou
+          <a href="fonts/OFL.txt">SIL Open Font License 1.1</a>.</li>
+      </ul>
+    </section>
+
+    <footer class="library-credits mt-6">
+      Použité knižnice:
+        <a href="https://tailwindcss.com/">Tailwind CSS 3.4.17</a> (CSS) a
+        <a href="https://jquery.com/">jQuery 4.0.0</a> (JavaScript).
+    </footer>
+  </main>
+</body>
+</html>
