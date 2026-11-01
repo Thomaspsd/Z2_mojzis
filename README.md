@@ -1,5 +1,5 @@
 Tomáš Mojžiš - 9.00 cviko
-[https://webte1.fei.stuba.sk/~xmojzist/Z2_](https://webte1.fei.stuba.sk/~xmojzist/Z2_mojzis)
+https://webte1.fei.stuba.sk/~xmojzist/Z2_mojzis
 
 Font Licencia: /fonts/OFL.txt
 
